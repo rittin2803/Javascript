@@ -1,2 +1,2 @@
-# React
-Project using React JS
+# Javascript
+Basics and Projects using Javascript
