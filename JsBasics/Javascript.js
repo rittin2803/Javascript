@@ -1,3 +1,5 @@
+alert('Hello');
+document.body.innerHTML = 'I am Rittin';
 console.log('Hello world');
 
 // Variables 
@@ -43,3 +45,5 @@ function greet(fname){
 }
 greet('Rittin');
 
+
+// Part - 1
