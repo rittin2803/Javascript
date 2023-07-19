@@ -13,7 +13,7 @@ let page = 1;
 async function searchImages(){
     inputData = inputE1.value;
     //Dynamic url
-    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&cliend_id=${accessKey}`;
+    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${accessKey}`;
     //fetch and response method
     const response = await fetch(url)
     const data = await response.json()
