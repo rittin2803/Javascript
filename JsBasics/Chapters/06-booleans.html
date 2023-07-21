@@ -21,11 +21,29 @@
                 console.log('else');
             }
 
-            if(30 >= 18){
+            const age = 15;
+            if(age >= 18){
                 console.log('You can drive');
-            }else {
+            } else if(age >= 14) {
+                console.log('Almost there');
+            }
+            else {
                 console.log('You cannot drive');
             }
+
+            // Logical Operators  &&, ||, ! - And, Or, Not
+
+            //TRUTHY, FALSY - false, 0, '', NaN, undefined, Null..etc
+
+            /*Shortcuts for if statements
+            ?:, &&, ||
+            */
+
+            true ? 'truth' : 'False'; // Ternary
+
+            false && console.log('Hello'); //Guard
+
+            true || console.log('STOPS EARLY');
         </script>
 </body>
 </html>
