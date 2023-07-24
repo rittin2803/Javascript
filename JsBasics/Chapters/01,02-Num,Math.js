@@ -2,7 +2,8 @@
 
 //Computers can work properly with eveny Floats
 //Some math functions
-Math.round
+let variable = Math.round(6.5);
+console.log(variable);
 Math.floor
 Math.ceil
 Math.max
