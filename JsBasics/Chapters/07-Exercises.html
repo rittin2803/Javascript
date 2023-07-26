@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+  </head>
+  <body>
+    <button onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+    ">Show Quantity</button>
+
+    <button onclick="
+      reuse(1);
+    ">Add to Cart</button>
+
+    <button onclick="
+      reuse(2);
+    ">+2</button>
+
+    <button onclick="
+      reuse(3);
+    ">+3</button>
+
+    <button onclick="
+      reuse(4);
+    ">+4</button>
+
+    <button onclick="
+      reuse(5);
+    ">+5</button>
+
+    <!-- vvv This code was changed. vvv -->
+    <button onclick="
+      reuse(-1);
+    ">Remove from cart</button>
+
+    <button onclick="
+      reuse(-2);
+    ">-2</button>
+
+    <button onclick="
+      reuse(-3);
+    ">-3</button>
+    <!-- ^^^ This code was changed. ^^^ -->
+
+    <button onclick="
+      cartQuantity = 0;
+      reuse(0);
+    ">Reset Cart</button>
+
+    <script>
+      let cartQuantity = 0;
+
+      function reuse(add){
+        if (cartQuantity + add > 10) {
+        alert('The cart is full');
+      } else {
+        cartQuantity+=add;
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
+      }
+    </script>
+  </body>
+</html>

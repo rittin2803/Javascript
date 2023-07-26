@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+        <script>
+            /*
+            //Objects - group & use multiple values together.
+            const product = {
+                //property: value pairs
+                name: 'Socks',
+                price: 1090
+            };
+            console.log(product);
+            console.log(product.name); //Dot Notation - default
+            console.log(product.price);
+
+            product.price = 2000; //Changing value
+            console.log(product.price);
+
+            product.newProp = true; //Create and delete
+            delete product.newProp;
+            */
+
+            const product2 = {
+                name: 'Zip',
+                'delivery-time': '1 day'
+            };
+            console.log(product2);
+            console.log(product2.name);
+            //Another way to access objects
+            console.log(product2['name']);//Bracket notation - lets us use props that dot notation can't handle.
+            console.log(product2['delivery-time']);
+        </script>
+        
+</body>
+</html>
