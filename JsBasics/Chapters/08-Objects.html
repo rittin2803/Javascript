@@ -27,13 +27,24 @@
 
             const product2 = {
                 name: 'Zip',
-                'delivery-time': '1 day'
+                'delivery-time': '1 day',
+                //any type of values - nested objects, var, bool,..
+                rating: {
+                    stars: 4.5,
+                    count: 87
+                },
+                //even functions
+                fun: function function1(){
+                    console.log('function inside object as a value');
+                }
             };
             console.log(product2);
             console.log(product2.name);
             //Another way to access objects
             console.log(product2['name']);//Bracket notation - lets us use props that dot notation can't handle.
             console.log(product2['delivery-time']);
+            console.log(product2.rating.stars);
+            product2.fun();
         </script>
         
 </body>
