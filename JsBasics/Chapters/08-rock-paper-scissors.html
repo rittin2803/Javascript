@@ -21,18 +21,29 @@
         score.wins = 0;
         score.loses = 0;
         score.ties = 0;
+        localStorage.removeItem('score');
         alert('Score Resetted');
     ">Reset Score</button>
 
          <script>
-        const score = {
-            wins: 0,
-            loses: 0,
-            ties: 0
-        };
+        let score = JSON.parse(localStorage.getItem('score')) || {
+                wins: 0,
+                loses: 0,   //Setting with default operator
+                ties: 0
+            };
         const randomNumber = Math.random(); 
         let Result = '';
 
+        /*
+        if(!score) { //checking falsy and setting default
+            score = {
+                wins: 0,
+                loses: 0,
+                ties: 0
+            };
+        } */
+
+        console.log(localStorage.getItem('score'));
         //Using Function to replace the repitition of code and make updation easier.
         function playGame(playerMove){
                 const compMove= pickCompMove();
@@ -72,6 +83,8 @@
             } else if (Result === 'Tie'){
                 score.ties += 1;
             }
+
+            localStorage.setItem('score', JSON.stringify(score));
 
             alert(`You picked ${playerMove}. Comp picked ${compMove}. You ${Result}\nWins: ${score.wins}, Loses: ${score.loses}, Ties: ${score.ties}`); 
             

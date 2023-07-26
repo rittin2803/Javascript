@@ -35,16 +35,28 @@
                 },
                 //even functions
                 fun: function function1(){
-                    console.log('function inside object as a value');
+                    console.log('function inside object as a value - Method');
                 }
             };
             console.log(product2);
             console.log(product2.name);
+
             //Another way to access objects
             console.log(product2['name']);//Bracket notation - lets us use props that dot notation can't handle.
             console.log(product2['delivery-time']);
             console.log(product2.rating.stars);
             product2.fun();
+
+            //Built-in Objects - console, Math, JSON, localstorage
+
+            //JSON - "":"", universal, less features.
+            //Conversions
+            console.log(JSON.stringify(product2));
+            console.log(JSON.parse(JSON.stringify(product2)));
+
+            //LOCALSTORAGE - only supports strings.
+            localStorage.getItem('message');
+            localStorage.setItem('message', 'Hello');
         </script>
         
 </body>
