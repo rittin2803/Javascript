@@ -85,6 +85,7 @@
             }
 
             localStorage.setItem('score', JSON.stringify(score));
+            //Setting Item - variable, localstorage only supprts strings
 
             alert(`You picked ${playerMove}. Comp picked ${compMove}. You ${Result}\nWins: ${score.wins}, Loses: ${score.loses}, Ties: ${score.ties}`); 
             

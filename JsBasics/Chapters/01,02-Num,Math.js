@@ -4,7 +4,7 @@
 //Some math functions
 let variable = Math.round(6.5);
 console.log(variable);
-Math.floor
-Math.ceil
-Math.max
+Math.floor()
+Math.ceil()
+Math.max()
 

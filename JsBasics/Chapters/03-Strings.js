@@ -8,12 +8,12 @@ var Lname = 'Mithra';
 console.log(Fname + Lname);
 
 //Concatenation of string and numbers result in strings.
-typeof Fname;
+console.log(typeof Fname);
 
 //Escape Character - \', \", \n
 
 //Ways to create - ', ", `
 
-// `` - Template strings - Used for Interpolation, Multi line strings
+// `${}` - Template strings - Used for Interpolation, Multi line strings
 `Items (${1+1})` // - Inserts values directly to string
 

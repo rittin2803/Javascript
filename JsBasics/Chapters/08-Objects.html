@@ -28,12 +28,12 @@
             const product2 = {
                 name: 'Zip',
                 'delivery-time': '1 day',
-                //any type of values - nested objects, var, bool,..
+                // any type of values - nested objects, var, bool,..
                 rating: {
                     stars: 4.5,
                     count: 87
                 },
-                //even functions
+                // functions
                 fun: function function1(){
                     console.log('function inside object as a value - Method');
                 }
@@ -51,12 +51,39 @@
 
             //JSON - "":"", universal, less features.
             //Conversions
-            console.log(JSON.stringify(product2));
-            console.log(JSON.parse(JSON.stringify(product2)));
+            console.log(JSON.stringify(product2)); // -> String
+            console.log(JSON.parse(JSON.stringify(product2))); // -> JSON
 
-            //LOCALSTORAGE - only supports strings.
+            //LOCALSTORAGE - variable, only supports strings.
             localStorage.getItem('message');
             localStorage.setItem('message', 'Hello');
+
+            // Null - Intensional
+
+            //Autoboxing - wraps to special object, works except null & undef
+            console.log('RittinMithra'.length);
+            console.log('hello'.toUpperCase);
+
+            //Objects- References
+            const object1 = {
+                message: 'hello' 
+                // - gets referenced
+            }
+            const object2  = object1;
+            object3 = {
+                message: 'hello'
+            }
+            console.log(object3 === object1);
+
+            //Shortcuts
+            const object4 = {
+                message: 'Good Job!'
+            }
+            
+            //DESTRUCTURING - 2 ways to take properties out of object
+            //const message = object1.message;
+            const {message} = object4;
+            console.log(messgae);
         </script>
         
 </body>
