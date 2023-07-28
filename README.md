@@ -1,2 +1,4 @@
 # Javascript
-Basics and Projects using Javascript
+Learning Javascript
+
+Creating an Basic Amazon Clone as a Beginners Project. 
