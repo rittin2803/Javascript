@@ -62,7 +62,7 @@
 
             //Autoboxing - wraps to special object, works except null & undef
             console.log('RittinMithra'.length);
-            console.log('hello'.toUpperCase);
+            console.log('hello'.toUpperCase());
 
             //Objects- References
             const object1 = {
@@ -77,13 +77,33 @@
 
             //Shortcuts
             const object4 = {
-                message: 'Good Job!'
-            }
+                message: 'Good Job!',
+                price: 799
+            };
             
             //DESTRUCTURING - 2 ways to take properties out of object
             //const message = object1.message;
-            const {message} = object4;
-            console.log(messgae);
+            const {message, price} = object4;
+            console.log(message);
+            console.log(price);
+
+            //shorthand properties
+            const object5 = {
+                //message: message
+                message,  // - if prop and value has same name
+
+
+                // For creating function inside object
+                /*method: function function1(){
+                    console.log('method');
+                }*/
+                method(){
+                    console.log('method');
+                }
+
+            };
+            console.log(object5.message);
+            object5.method();
         </script>
         
 </body>
