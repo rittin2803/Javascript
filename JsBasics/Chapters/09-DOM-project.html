@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project</title>
+</head>
+<body>
+    <h2>Youtube Subscribe Button</h2>
+    <button onclick="
+        subscribe();
+        //.innerText - avoid blank spaces
+    " class="js-button">Subscribe</button>
+    
+    <h2>Next Version of Rock, Paper, Scissors</h2>
+    <a href="09-DOM-rps.html">
+        Click Here
+    </a>
+    <br>
+
+    <h2>Amazon Calculator</h2>
+    <a href="09-DOM-calculator.html">
+        Click Here
+    </a>
+        <script>
+            function subscribe(){
+        const buttonElement =  document.querySelector('.js-button');
+        
+        if(buttonElement.innerText === 'Subscribe'){
+            buttonElement.innerHTML ='Subscribed';
+        } else{
+            buttonElement.innerHTML ='Subscribe';
+        }
+    };
+        </script>
+        
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button>Hello</button>
+    <button class="js-button">2nd Button</button>
+        <script>
+            /*Another Built-in-Object 
+            that represents or models webpage (directly linked)
+            Combines JS and HTML together
+            */
+
+
+            /*
+            document.body.innerHTML = 'Hello Rittin';
+            document.title = "Change";
+            //object.property
+            */
+            
+            console.log(document.title);
+            console.log(document.body); //Complete body of HTML converted to an OBJECT
+            console.log(typeof document.body);
+            //document.body.innerHTML = "Changed"; - Replaces whole body of HTML
+
+        
+            console.log(document.querySelector('button'));
+            console.log(document.querySelector('.js-button')); 
+            //get any element
+            //Every HTML element has .innerHTML property
+        </script>
+        
+</body>
+</html>
