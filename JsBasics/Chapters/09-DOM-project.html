@@ -18,15 +18,31 @@
     </a>
     <br>
 
-    <h2>Amazon Calculator</h2>
-    <a href="09-DOM-calculator.html">
-        Click Here
-    </a>
+    <h2>Amazon Shipping Calculator</h2>
+    <p>Orders under $40 = +$10 Shipping</p>
+    <p>Orders over $40 = Free Shipping</p>
 
-    <a href="09-css.html"><h2>Click here for CSS Versions</h2> </a>
+
+    <input class="js-input" type="text" placeholder="Cost of Order" onkeydown="console.log(event.key);"> <button onclick="
+        calculate();
+    ">Calculate</button>
+
+    <p class="js-calculate"></p>
+
+    <a href="09-css.html"><h3>Click here for CSS Versions</h3> </a>
 </body>
         <script>
-            function subscribe(){
+
+        function calculate(){
+            const cost = document.querySelector('.js-input');
+            if (cost.value < 40){
+                document.querySelector('.js-calculate').innerHTML = `$${Number(cost.value)+10}`;
+            }else{
+                document.querySelector('.js-calculate').innerHTML = `$${Number(cost.value)}`;
+            }
+        }
+
+        function subscribe(){
         const buttonElement =  document.querySelector('.js-button');
         
         if(buttonElement.innerText === 'Subscribe'){
