@@ -1,0 +1,48 @@
+
+body{
+    background-color: rgb(25, 25, 25);
+    color: whitesmoke;
+    font-family: Arial;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.move-icon{
+    height: 60px;
+    border: none;
+}
+
+.move-button{
+    background-color: transparent;
+    border: 2px solid white;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    justify-content: space-between;
+    border-radius: 60px;
+    margin-right: 13px;
+}
+
+.js-result{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.score{
+    margin-top: 60px;
+}
+
+.reset-button{
+    background-color: whitesmoke;
+    height: 40px;
+    width: 130px;
+    margin-top: -25px;
+    font-size: 15px;
+    cursor: pointer;
+}
